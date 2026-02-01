@@ -23,66 +23,223 @@
             padding: 120px 20px;
             border-bottom: 3px solid #00ff88;
             box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(0, 255, 136, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
-            animation: glow 3s ease-in-out infinite;
         }
         header h1 {
             font-size: 4em;
             margin-bottom: 15px;
-            animation: fadeInDown 1s;
-            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.5);
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
             color: #00ff88;
-            position: relative;
-            z-index: 1;
         }
         header p {
             font-size: 1.5em;
             color: #ff00ff;
             text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
-            position: relative;
-            z-index: 1;
         }
         nav {
             background: #0a0a0a;
-            color: white;
             padding: 18px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
             border-bottom: 2px solid #00ff88;
-            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
         }
         nav a {
             color: #00ff88;
             margin: 0 25px;
             text-decoration: none;
             font-weight: 700;
-            transition: all 0.3s;
             padding: 10px 20px;
             border-radius: 5px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.95em;
         }
         nav a:hover {
             background: #00ff88;
             color: #000000;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
-            transform: translateY(-3px);
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 50px 20px;
         }
+        section {
+            background: #1a1a1a;
+            margin-bottom: 35px;
+            padding: 45px;
+            border-radius: 15px;
+            border-left: 5px solid #00ff88;
+        }
+        h2 {
+            color: #00ff88;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+        }
+        .card {
+            background: #0f0f0f;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 12px;
+            border: 2px solid #222;
+        }
+        .card:hover {
+            border-color: #00ff88;
+            transform: translateX(10px);
+        }
+        .card h3 {
+            color: #ff00ff;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .card p {
+            color: #b0b0b0;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            color: #000;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .highlight h3 {
+            color: #000;
+            font-size: 1.8em;
+        }
+        .highlight p {
+            color: #000;
+        }
+        footer {
+            background: #0a0a0a;
+            color: #888;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 3px solid #00ff88;
+        }
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff00ff;
+        }
+        .contact-info {
+            line-height: 2.5;
+            font-size: 1.15em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LEE J</h1>
+        <p>Welcome to My Digital Space</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                Hello! I'm <strong style="color: #00ff88;">Lee J</strong>, and this is my personal space on the web. 
+                I'm passionate about <strong style="color: #ff00ff;">[your interests/profession]</strong> and I love 
+                <strong style="color: #00d4ff;">[what you enjoy doing]</strong>.
+            </p>
+            <p style="font-size: 1.15em;">
+                I created this website to showcase my work, share my thoughts, and connect with others 
+                who share similar interests. Feel free to explore and get in touch!
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="card">
+                <h3>🚀 Project One</h3>
+                <p>This is where you can describe your first project. What did you create? 
+                What technologies or skills did you use? What problem does it solve?</p>
+                <p style="margin-top: 15px; color: #888;">
+                    <strong style="color: #00d4ff;">Tech Stack:</strong> HTML, CSS, JavaScript | 
+                    <strong style="color: #00d4ff;">Status:</strong> <span style="color: #00ff88;">Completed</span>
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💡 Project Two</h3>
+                <p>Describe your second project here. Highlight what makes it unique and 
+                what you learned from building it.</p>
+                <p style="margin-top: 15px; color: #888;">
+                    <strong style="color: #00d4ff;">Tech Stack:</strong> Python, Flask, SQLite | 
+                    <strong style="color: #00d4ff;">Status:</strong> <span style="color: #ff00ff;">In Progress</span>
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Project Three</h3>
+                <p>Another project you're proud of. Share the challenges you faced and how you overcame them.</p>
+                <p style="margin-top: 15px; color: #888;">
+                    <strong style="color: #00d4ff;">Tech Stack:</strong> React, Node.js, MongoDB | 
+                    <strong style="color: #00d4ff;">Status:</strong> <span style="color: #00d4ff;">Planning</span>
+                </p>
+            </div>
+
+            <div class="highlight">
+                <h3>🌟 Featured Work</h3>
+                <p>Highlight your best work or current focus here. This could be a major project, 
+                achievement, or something you're particularly excited about.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            
+            <div class="card">
+                <h3>💻 Technical Skills</h3>
+                <p><strong style="color: #00d4ff;">Programming Languages:</strong> HTML, CSS, JavaScript, Python, Java</p>
+                <p><strong style="color: #00d4ff;">Frameworks & Libraries:</strong> React, Node.js, Express, Bootstrap</p>
+                <p><strong style="color: #00d4ff;">Tools & Platforms:</strong> Git, GitHub, VS Code, Figma</p>
+                <p><strong style="color: #00d4ff;">Databases:</strong> MySQL, MongoDB, PostgreSQL</p>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Professional Skills</h3>
+                <p>• Problem Solving & Critical Thinking</p>
+                <p>• Team Collaboration & Communication</p>
+                <p>• Project Management</p>
+                <p>• Continuous Learning & Adaptability</p>
+            </div>
+
+            <div class="card">
+                <h3>📚 Currently Learning</h3>
+                <p>List what you're currently studying or improving on. This shows you're 
+                actively developing your skills!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p style="font-size: 1.15em; margin-bottom: 30px;">
+                I'd love to hear from you! Whether you have a question, want to collaborate, 
+                or just want to say hi, feel free to reach out.
+            </p>
+            <div class="contact-info">
+                <p>📧 <strong style="color: #00ff88;">Email:</strong> <em>your.email@example.com</em></p>
+                <p>💼 <strong style="color: #00ff88;">LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+                <p>🐙 <strong style="color: #00ff88;">GitHub:</strong> <a href="https://github.com/leej14008" target="_blank">github.com/leej14008</a></p>
+                <p>🐦 <strong style="color: #00ff88;">Twitter:</strong> <a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p style="color: #00ff88; font-size: 1.1em;">© 2024 Lee J. All rights reserved.</p>
+        <p style="margin-top: 12px;">
+            Built with <span style="color: #ff00ff;">❤️</span> using GitHub Pages
+        </p>
+    </footer>
+</body>
+</html>
